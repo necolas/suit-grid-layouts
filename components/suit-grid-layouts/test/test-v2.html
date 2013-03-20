@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive grid v2 [component] - SUIT</title>
+        <link rel="stylesheet" href="../components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../components/suit-grid/grid.css">
+        <link rel="stylesheet" href="../grid-layouts.css">
+        <style>
+            .Grid-cell {
+                min-height: 50px;
+                padding: 5px;
+                border: 1px solid black;
+                background: rgba(0, 0, 0, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Version 2</h1>
+        <p>NOTE: All layouts will be 100% before this breakpoint is met.</p>
+
+        <h3>1 column</h3>
+        <div class="Grid v2-Grid--1col">
+            <div class="Grid-cell Grid-cell--1">100%</div>
+            <div class="Grid-cell Grid-cell--2">100%</div>
+        </div>
+
+        <h3>2 columns</h3>
+        <div class="Grid v2-Grid--2col">
+            <div class="Grid-cell Grid-cell--1">50%</div>
+            <div class="Grid-cell Grid-cell--2">50%</div>
+        </div>
+
+        <h3>3 columns</h3>
+        <div class="Grid v2-Grid--3col">
+            <div class="Grid-cell Grid-cell--1">33.33%</div>
+            <div class="Grid-cell Grid-cell--1">33.33%</div>
+            <div class="Grid-cell Grid-cell--2">33.33%</div>
+        </div>
+
+        <h3>4 columns</h3>
+        <div class="Grid v2-Grid--4col">
+            <div class="Grid-cell Grid-cell--1">25%</div>
+            <div class="Grid-cell Grid-cell--2">25%</div>
+            <div class="Grid-cell Grid-cell--3">25%</div>
+            <div class="Grid-cell Grid-cell--4">25%</div>
+        </div>
+
+        <h3>2 columns, 1:2 ratio</h3>
+        <div class="Grid v2-Grid--1to2">
+            <div class="Grid-cell Grid-cell--1">33.33%</div>
+            <div class="Grid-cell Grid-cell--2">66.66%</div>
+        </div>
+
+        <h3>2 columns, 2:1 ratio</h3>
+        <div class="Grid v2-Grid--2to1">
+            <div class="Grid-cell Grid-cell--1">66.66%</div>
+            <div class="Grid-cell Grid-cell--2">33.33%</div>
+        </div>
+
+        <h3>2 columns, 1:3 ratio</h3>
+        <div class="Grid v2-Grid--1to3">
+            <div class="Grid-cell Grid-cell--1">25%</div>
+            <div class="Grid-cell Grid-cell--2">75%</div>
+        </div>
+
+        <h3>2 columns, 3:1 ratio</h3>
+        <div class="Grid v2-Grid--3to1">
+            <div class="Grid-cell Grid-cell--1">25%</div>
+            <div class="Grid-cell Grid-cell--2">75%</div>
+        </div>
+
+        <h3>3 columns ontop of 1 column</h3>
+        <div class="Grid v2-Grid--3on1">
+            <div class="Grid-cell Grid-cell--1">33.33%</div>
+            <div class="Grid-cell Grid-cell--2">33.33%</div>
+            <div class="Grid-cell Grid-cell--3">33.33%</div>
+            <div class="Grid-cell Grid-cell--4">100%</div>
+        </div>
+
+        <h3>2 columns, dynamic fit:fill ratio</h3>
+        <div class="Grid v2-Grid--fitToFill">
+            <div class="Grid-cell Grid-cell--1">fit</div>
+            <div class="Grid-cell Grid-cell--2">fill</div>
+        </div>
+    </body>
+</html>

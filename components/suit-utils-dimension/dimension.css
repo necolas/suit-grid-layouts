@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Dimension utilities
+   ========================================================================== */
+
+/* Intrinsic widths
+   ========================================================================== */
+
+/**
+ * Make an element shrink wrap its content.
+ */
+
+.u-sizeFit {
+    display: block;
+    float: left;
+    width: auto !important;
+}
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+
+.u-sizeFill {
+    display: block;
+    overflow: hidden;
+    width: auto !important;
+}
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+
+.u-sizeFillAlt {
+    display: table-cell;
+    max-width: 100%;
+    width: 10000px;
+}
+
+/**
+ * Make an element the width of its parent.
+ */
+
+.u-sizeFull {
+    display: block;
+    width: 100%;
+}
+
+/* Proportional widths
+   ========================================================================== */
+
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 4, 5, 6, 8, 10, 12 part
+ */
+
+.u-size1of12 {
+    width: 8.333%;
+}
+
+.u-size1of10 {
+    width: 10%;
+}
+
+.u-size1of8 {
+    width: 12.5%;
+}
+
+.u-size1of6,
+.u-size2of12 {
+    width: 16.667%;
+}
+
+.u-size1of5,
+.u-size2of10 {
+    width: 20%;
+}
+
+.u-size1of4,
+.u-size2of8,
+.u-size3of12 {
+    width: 25%;
+}
+
+.u-size3of10 {
+    width: 30%;
+}
+
+.u-size1of3,
+.u-size2of6,
+.u-size3of9,
+.u-size4of12 {
+    width: 33.333%;
+}
+
+.u-size3of8 {
+    width: 37.5%;
+}
+
+.u-size2of5,
+.u-size4of10 {
+    width: 40%;
+}
+
+.u-size5of12 {
+    width: 41.667%;
+}
+
+.u-size1of2,
+.u-size2of4,
+.u-size3of6,
+.u-size4of8,
+.u-size5of10,
+.u-size6of12 {
+    width: 50%;
+}
+
+.u-size7of12 {
+    width: 58.333%;
+}
+
+.u-size3of5,
+.u-size6of10 {
+    width: 60%;
+}
+
+.u-size5of8 {
+    width: 62.5%;
+}
+
+.u-size2of3,
+.u-size4of6,
+.u-size8of12 {
+    width: 66.667%;
+}
+
+.u-size7of10 {
+    width: 70%;
+}
+
+.u-size3of4,
+.u-size6of8,
+.u-size9of12 {
+    width: 75%;
+}
+
+.u-size4of5,
+.u-size8of10 {
+    width: 80%;
+}
+
+.u-size5of6,
+.u-size10of12 {
+    width: 83.333%;
+}
+
+.u-size7of8 {
+    width: 87.5%;
+}
+
+.u-size9of10 {
+    width: 90%;
+}
+
+.u-size11of12 {
+    width: 91.667%;
+}

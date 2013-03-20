@@ -1,0 +1,12 @@
+{
+    "name": "suit-grid-layouts-site",
+    "version": "0.0.0",
+    "author": "Nicolas Gallagher",
+    "dependencies": {
+        "normalize-css": "~2.1.0",
+        "suit-grid": "~0.3.0",
+        "suit-grid-layouts": "~0.1.0",
+        "suit-utils-dimension": "~0.2.0",
+        "suit-utils-layout": "~0.1.0"
+    }
+}

@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/**
+ * Core grid component
+ * Make use of dimension utilities, or components that extend 'grid' in order
+ * to apply particular widths to cells.
+ *
+ * Example uses:
+ *
+ * <div class="Grid">
+ *     <div class="Grid-cell u-size1of2"></div>
+ *     <div class="Grid-cell u-size1of2"></div>
+ *     <div class="Grid-cell u-size1of3"></div>
+ *     <div class="Grid-cell u-size1of3"></div>
+ * </div>
+ *
+ * <div class="Grid Grid--center">
+ *     <div class="Grid-cell u-size1of3"></div>
+ *     <div class="Grid-cell u-size1of3"></div>
+ * </div>
+ */
+
+/* Grid container
+   ========================================================================== */
+
+/**
+ * Must only contain `Grid` or `Grid-cell` components as children.
+ *
+ * 1. Ensure consistent default alignment.
+ * 2. Remove inter-unit whitespace that appears between `inline-block` child
+ *    elements. Work for all non-monospace font-families.  If you're using a
+ *    monospace base font, you will need to set the `Grid` font-family to
+ *   `sans-serif` and then redeclare the monospace font on the `Grid-cell`
+ *    objects.
+ * 3. Protect against WebKit bug with optimizelegibility.
+ */
+
+.Grid {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* 1 */
+    letter-spacing: -0.31em; /* 2 */
+    text-rendering: optimizespeed; /* 3 */
+}
+
+/* Opera hack */
+
+.opera:-o-prefocus,
+.Grid {
+    word-spacing: -0.43em; /* 2 */
+}
+
+/**
+ * Modifier: horizontally center all grid units
+ * Allows for automatic unit centering irrespective of the number of
+ * units in the grid.
+ */
+
+.Grid--center {
+    text-align: center;
+}
+
+/* Grid cell
+   ========================================================================== */
+
+/**
+ * No explicit width by default. Rely on combining `Grid-cell` with a dimension
+ * utility or component that extends 'grid'.
+ *
+ * 1. Fundamentals of the non-float grid layout mechanism.
+ * 2. Controls vertical positioning of units.
+ * 3. Keeps content correctly aligned with the grid direction.
+ * 4. Reset text defaults.
+ */
+
+.Grid-cell {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block; /* 1 */
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* 2 */
+    text-align: left; /* 3 */
+    letter-spacing: normal; /* 4 */
+    word-spacing: normal; /* 4 */
+    text-rendering: auto; /* 4 */
+}
+
+/**
+ * Modifier: horizontally center one unit
+ * Set a specific unit to be horizontally centered. Doesn't affect
+ * any other units. Can still contain a child `Grid` object.
+ */
+
+.Grid-cell--center {
+    display: block;
+    margin: 0 auto;
+}

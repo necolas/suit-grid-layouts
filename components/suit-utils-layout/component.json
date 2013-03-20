@@ -1,0 +1,17 @@
+{
+  "name": "suit-utils-layout",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nicolas Gallagher"
+  },
+  "main": "layout.css",
+  "gitHead": "8265c8c574d7a3c014dbb8619d19ea252de7ec29",
+  "readme": "# SUIT utilities: layout\n\nA SUIT collection of utility classes for low-level CSS layout traits.\n\nRead more about [SUIT's design principles](https://github.com/necolas/suit/).\n\n## Installation\n\n* Download: [zip](https://github.com/necolas/suit-utils-layout/zipball/master)\n* [Bower](https://github.com/twitter/bower/): `bower install suit-utils-layout`\n* Git: `git clone https://github.com/necolas/suit-utils-layout.git`\n\n## Usage\n\nPlease refer to the README for [SUIT utils](https://github.com/necolas/suit-utils/)\n\n## Browser support\n\n* Google Chrome (latest)\n* Opera (latest)\n* Firefox 4+\n* Safari 5+\n* Internet Explorer 8+\n",
+  "readmeFilename": "README.md",
+  "_id": "suit-utils-layout@0.1.0",
+  "description": "A SUIT collection of utility classes for low-level CSS layout traits.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/necolas/suit-utils-layout.git"
+  }
+}

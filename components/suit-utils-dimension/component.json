@@ -1,0 +1,17 @@
+{
+  "name": "suit-utils-dimension",
+  "version": "0.2.0",
+  "author": {
+    "name": "Nicolas Gallagher"
+  },
+  "main": "dimension.css",
+  "gitHead": "970dead969df1e3cc54204cb8494a32f401ddb1d",
+  "readme": "# SUIT utilities: dimension\n\nA SUIT collection of utility classes for low-level CSS dimension traits.\n\nRead more about [SUIT's design principles](https://github.com/necolas/suit/).\n\n## Installation\n\n* Download: [zip](https://github.com/necolas/suit-utils-dimension/zipball/master)\n* [Bower](https://github.com/twitter/bower/): `bower install suit-utils-dimension`\n* Git: `git clone https://github.com/necolas/suit-utils-dimension.git`\n\n## Usage\n\nPlease refer to the README for [SUIT utils](https://github.com/necolas/suit-utils/)\n\n## Browser support\n\n* Google Chrome (latest)\n* Opera (latest)\n* Firefox 4+\n* Safari 5+\n* Internet Explorer 8+\n",
+  "readmeFilename": "README.md",
+  "_id": "suit-utils-dimension@0.2.0",
+  "description": "A SUIT collection of utility classes for low-level CSS dimension traits.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/necolas/suit-utils-dimension.git"
+  }
+}

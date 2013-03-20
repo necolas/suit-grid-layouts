@@ -1,0 +1,20 @@
+{
+  "name": "suit-grid",
+  "version": "0.3.0",
+  "author": {
+    "name": "Nicolas Gallagher"
+  },
+  "main": "grid.css",
+  "devDependencies": {
+    "suit-utils-dimension": "~0.2.0"
+  },
+  "gitHead": "e08cefe9a47c09ec07d76113493cd1b30fb6da81",
+  "readme": "# SUIT grid\n\nA SUIT component for a CSS grid. The grid makes use of `inline-block` and\n`box-sizing` to provide features that float-based layouts cannot.\n\nN.B. This component relies on particular dimensions being applied to cells in\nthe grid via other classes. For example, [SUIT\ndimensions](https://github.com/necolas/suit-utils-dimensions) or the [SUIT\nresponsive grid](https://github.com/necolas/suit-grid-responsive) extension.\n\nRead more about [SUIT's design principles](https://github.com/necolas/suit/).\n\n## Installation\n\n* Download: [zip](https://github.com/necolas/suit-grid/zipball/master)\n* [Bower](https://github.com/twitter/bower/): `bower install suit-grid --save`\n* Git: `git clone https://github.com/necolas/suit-grid`\n\n## Features\n\n* Fluid layout.\n* Intelligent cell wrapping.\n* Horizontal centering of cells.\n* Custom vertical alignment of cells (top, bottom, or middle).\n* Cell width is controlled independently of grid gutter.\n* Infinite nesting.\n* Built-in redundancy.\n\n## Use\n\nA simple grid is easy to create. A grid container can have any number of cells.\nEach cell can be directly or indirectly styled to control their width and\nalignment.\n\n```html\n<div class=\"Grid\">\n    <div class=\"Grid-cell u-size1of2\"></div>\n    <div class=\"Grid-cell u-size1of2\"></div>\n    <div class=\"Grid-cell u-size1of3\"></div>\n    <div class=\"Grid-cell u-size1of3\"></div>\n</div>\n```\n\nAll cells within a grid can be centered by adding the `Grid--center` class to the grid container:\n\n```html\n<div class=\"Grid Grid--center\">\n    <div class=\"Grid-cell u-size1of3\"></div>\n    <div class=\"Grid-cell u-size1of3\"></div>\n</div>\n```\n\nOr individual cells can be centered on their own line by adding the\n`Grid-cell--center` class to a cell:\n\n```html\n<div class=\"Grid\">\n    <div class=\"Grid-cell u-size1of2\"></div>\n    <div class=\"Grid-cell u-size1of2\"></div>\n    <div class=\"Grid-cell Grid--center u-size3of4\"></div>\n</div>\n```\n\nThe core grid component includes no gutters by default.\n\nYou may want to install or create a skin that adds gutters to the grid. This is\nthe technique used to create gutters:\n\n```css\n/* Grid gutters: 10px */\n\n.Grid {\n    margin: 0 -5px;\n}\n\n.Grid-cell {\n    padding: 0 5px;\n}\n```\n\n## Browser support\n\n* Google Chrome (latest)\n* Opera (latest)\n* Firefox 4+\n* Safari 5+\n* Internet Explorer 8+\n",
+  "readmeFilename": "README.md",
+  "_id": "suit-grid@0.3.0",
+  "description": "A SUIT component for a CSS grid. The grid makes use of `inline-block` and `box-sizing` to provide features that float-based layouts cannot.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/necolas/suit-grid.git"
+  }
+}

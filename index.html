@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid layouts demos [component] - SUIT</title>
+        <link rel="stylesheet" href="components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="components/suit-utils-layout/layout.css">
+        <link rel="stylesheet" href="components/suit-utils-dimension/dimension.css">
+        <link rel="stylesheet" href="components/suit-grid/grid.css">
+        <link rel="stylesheet" href="components/suit-grid-layouts/grid-layouts.css">
+        <style>
+            html {
+                font-family: georgia, serif;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            a {
+                color: #069;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                color: #069;
+                text-decoration: underline;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-weight: normal;
+                line-height: 1.2;
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 1.25em;
+            }
+
+            h3 {
+                font-size: 1.25em;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            p {
+                margin: 0.5em 0;
+            }
+
+            .Container {
+                margin: 0 auto;
+                max-width: 1200px;
+                overflow: hidden;
+                width: 95%;
+            }
+
+            .Logo {
+                font-size: 3em;
+                font-weight: bold;
+                margin: 1em 0 1.5em;
+                text-align: center;
+            }
+
+            .Logo span {
+                display: block;
+                font-size: 14px;
+                margin: 0.25em 0 0;
+            }
+
+            .Box {
+                margin-bottom: 2.5em;
+            }
+
+            /**
+             * Set application's grid gutter (40px)
+             */
+
+            .Grid {
+                margin: 0 -20px;
+            }
+
+            .Grid-cell {
+                padding: 0 20px;
+            }
+
+            /**
+             * Hand roll some app-specific utilities to make the demo a bit nicer.
+             */
+
+            .u-textCenter {
+                text-align: center;
+            }
+
+            .u-textLarger {
+                font-size: 1.125em;
+            }
+
+            .u-textAccentColor {
+                color: #b41919;
+            }
+
+            .u-divider {
+                border-top: 1px solid #aaa;
+                margin: 1.5em 0;
+            }
+
+            .u-sizeFull {
+                clear: both;
+            }
+
+            /**
+             * App component for title list
+             */
+
+            .ListOfTitles {
+                list-style: none;
+                padding: 0;
+            }
+
+            .ListOfTitles li {
+                border-top: 1px solid #ddd;
+                padding: 0.5em 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 class="Logo">
+          The Day Today
+          <span>A responsive demo of <a href="https://github.com/necolas/suit-grid-layouts/">SUIT Grid Layouts</a></span>
+        </h1>
+
+        <div class="Container">
+            <!-- outer grid -->
+            <div class="Grid v3-Grid--2to1">
+                <div class="Grid-cell Grid-cell--1">
+
+                    <!-- inner grid -->
+                    <div class="Grid v2-Grid--2col v3-Grid--3to2">
+                        <div class="Grid-cell Grid-cell--1">
+                            <div class="Box">
+                                <h1>FBI says it has identified the thieves in Gardner Museum heist</h1>
+                                <p>The FBI believes members of an East Coast criminal gang are responsible for the 1990 theft of $500 million in art from the Isabella Stewart Gardner Museum. Officials today offered a $5 million reward for help in recovering the items.12:00 pm</p>
+                                <img class="u-sizeFull" src="http://lorempixel.com/600/460/business/2" alt="">
+                            </div>
+                        </div>
+                        <div class="Grid-cell Grid-cell--2">
+                            <h3 class="u-textAccentColor">Latest news</h3>
+                            <div class="u-divider"></div>
+                            <div class="Box">
+                                <img class="u-objStart u-size1of5" src="http://lorempixel.com/60/60/business/1" alt="">
+                                <h2>Tenants, buyers of foreclosed units tangle over rents</h2>
+                                <p>A growing group of Boston-area tenants are fighting rent increases from real estate investors who are looking to make a profit.</p>
+                            </div>
+                            <div class="Box">
+                                <img class="u-objStart u-size1of5" src="http://lorempixel.com/60/60/business/2" alt="">
+                                <h2>Mashpee tribe, Mass. agree on new terms for casino</h2>
+<p>The Mashpee Wampanoag would pay the state 17 percent of gambling revenue from a Taunton tribal casino under a new deal with Governor Patrick.</p>
+                            </div>
+                           <div class="Box">
+                                <img class="u-objStart u-size1of5" src="http://lorempixel.com/60/60/business/3" alt="">
+                                <h2>‘Rockefeller’ murder trial begins in California</h2>
+                                <p>The man who for years masqueraded on the East Coast as “Clark Rockefeller” is charged with killing his landlord in 1985.1:12 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end inner grid -->
+                </div>
+                <div class="Grid-cell Grid-cell--2">
+                    <!-- inner grid -->
+                    <div class="Grid v2-Grid--2col v3-Grid--1col">
+                        <div class="Grid-cell Grid-cell--1">
+                            <div class="Box u-cf">
+                                <img class="u-sizeFull" src="http://lorempixel.com/600/600/food/7" alt="">
+                            </div>
+                        </div>
+                        <div class="Grid-cell Grid-cell--2">
+                            <div class="Box u-cf">
+                                <img class="u-objStart" src="http://lorempixel.com/100/140/nature/4" alt="">
+                                <h3>Read the ePaper edition</h3>
+                                <p>The complete print edition, in its exact layout. Browse the print edition page by page, including stories and ads.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end inner grid -->
+                </div>
+            </div>
+
+            <div class="u-divider"></div>
+
+            <div class="Grid v3-Grid--2to1">
+                <div class="Grid-cell Grid-cell--1">
+                    <!-- inner grid -->
+                    <div class="Grid v1-Grid--2col v2-Grid--4col">
+                        <div class="Grid-cell Grid-cell--1">
+                            <div class="Box u-textCenter">
+                                <img class="u-sizeFull" src="http://lorempixel.com/500/500/people/7" alt="">
+                                <h3>Going Dutch with Uncle Sam</h3>
+                            </div>
+                        </div>
+                        <div class="Grid-cell Grid-cell--2">
+                            <div class="Box u-textCenter">
+                                <img class="u-sizeFull" src="http://lorempixel.com/500/500/people/8" alt="">
+                                <h3>LeBron looking a lot like Wilt</h3>
+                            </div>
+                        </div>
+                        <div class="Grid-cell Grid-cell--3">
+                            <div class="Box u-textCenter">
+                                <img class="u-sizeFull" src="http://lorempixel.com/500/500/people/9" alt="">
+                                <h3>Finding good news in South Boston</h3>
+                            </div>
+                        </div>
+                        <div class="Grid-cell Grid-cell--4">
+                            <div class="Box u-textCenter">
+                                <img class="u-sizeFull" src="http://lorempixel.com/500/500/people/4" alt="">
+                                <h3>No straight answers from health center</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end inner grid -->
+
+                    <div class="Box u-cf">
+                        <h1>New dinosaur species is named after nine-year-old girl</h1>
+                        <p>A nine-year-old girl from the Isle of Wight has had a dinosaur named in her honour after a fossil she found turned out to be an undiscovered species.</p>
+                        <img class="u-sizeFull" src="http://lorempixel.com/800/220/nature/8" alt="">
+                    </div>
+                </div>
+                <div class="Grid-cell Grid-cell--2">
+                    <div class="Box u-cf">
+                        <img class="u-objStart u-size1of5" src="http://lorempixel.com/60/60/business/1" alt="">
+                        <h2>‘Rockefeller’ murder trial begins in California</h2>
+                        <p>The man who for years masqueraded on the East Coast as “Clark Rockefeller” is charged with killing his landlord in 1985.1:12 pm</p>
+                    </div>
+
+                    <ul class="ListOfTitles u-textLarger">
+                        <li><a href="#">
+                            Roads may be slick after winter storm
+                        </a></li>
+                        <li><a href="#">
+                            Neighbor reported seeing ‘Rockefeller’ dig in yard
+                        </a></li>
+                        <li><a href="#">
+                            MIT plans to release documents in Aaron Swartz case
+                        </a></li>
+                        <li><a href="#">
+                            Doctors say offices not equipped for disabled
+                        </a></li>
+                        <li><a href="#">
+                            Court says trial audio is off-limits
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
