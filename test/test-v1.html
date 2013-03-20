@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive grid v1 [component] - SUIT</title>
+        <link rel="stylesheet" href="../components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../components/suit-grid/grid.css">
+        <link rel="stylesheet" href="../grid-layouts.css">
+        <style>
+            .Grid-cell {
+                min-height: 50px;
+                padding: 5px;
+                border: 1px solid black;
+                background: rgba(0, 0, 0, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Version 1 (default)</h1>
+        <h3>2 columns</h3>
+        <div class="Grid v1-Grid--2col">
+            <div class="Grid-cell Grid-cell--1">50%</div>
+            <div class="Grid-cell Grid-cell--2">50%</div>
+        </div>
+
+        <h3>3 columns</h3>
+        <div class="Grid v1-Grid--3col">
+            <div class="Grid-cell Grid-cell--1">33%</div>
+            <div class="Grid-cell Grid-cell--2">33%</div>
+            <div class="Grid-cell Grid-cell--3">33%</div>
+        </div>
+    </body>
+</html>

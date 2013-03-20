@@ -1,0 +1,13 @@
+{
+    "name": "suit-grid-layouts",
+    "version": "0.1.0",
+    "author": "Nicolas Gallagher",
+    "main": "grid-layouts.css",
+    "dependencies": {
+        "suit-grid": "~0.3.0"
+    },
+    "devDependencies": {
+        "normalize-css": "~2.1.0",
+        "suit-utils-dimension": "~0.2.0"
+    }
+}
