@@ -222,6 +222,33 @@ JavaScript), you may want to look into serving the grid CSS to IE 8
 [without using media
 queries](http://nicolasgallagher.com/mobile-first-css-sass-and-ie/)).
 
+## Contributing to development
+
+Front-end development dependencies are managed with
+[Bower](https://github.com/twitter/bower/), a node package.
+
+Install Bower:
+
+```
+npm install bower -g
+```
+
+From within the `suit-grid-layouts` directory, run:
+
+```
+bower install
+```
+
+This will install [normalize.css](https://github.com/necolas/normalize.css/)
+and [suit-grid](https://github.com/necolas/suit-grid/) in the `components`
+directory. These components are used by the HTML test files found in `test`.
+
+When submitting patches, you should include a corresponding test in the HTML
+files and check that you have not introduced any regressions.
+
+Please read these [contribution
+guidelines](https://github.com/necolas/issue-guidelines).
+
 ## Browser support
 
 * Google Chrome (latest)
