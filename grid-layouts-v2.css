@@ -1,0 +1,61 @@
+/* Grid version 2 (at first breakpoint)
+========================================================================== */
+
+.v2-Grid--1col > .Grid-cell,
+.v2-Grid--3on1 > .Grid-cell--4 {
+    width: 100%;
+}
+
+.v2-Grid--1to3 > .Grid-cell--2,
+.v2-Grid--3to1 > .Grid-cell--1 {
+    width: 75%;
+}
+
+.v2-Grid--1to2 > .Grid-cell--2,
+.v2-Grid--2to1 > .Grid-cell--1 {
+    width: 66.666%;
+}
+
+.v2-Grid--2col > .Grid-cell {
+    width: 50%;
+}
+
+.v2-Grid--1to2 > .Grid-cell--1,
+.v2-Grid--2to1 > .Grid-cell--2,
+.v2-Grid--3col > .Grid-cell,
+.v2-Grid--3on1 > .Grid-cell--1,
+.v2-Grid--3on1 > .Grid-cell--2,
+.v2-Grid--3on1 > .Grid-cell--3 {
+    width: 33.333%;
+}
+
+.v2-Grid--1to3 > .Grid-cell--1,
+.v2-Grid--3to1 > .Grid-cell--2,
+.v2-Grid--4col > .Grid-cell {
+    width: 25%;
+}
+
+/**
+ * Fit and Fill
+ */
+
+.v2-Grid--fitToFill > .Grid-cell--1 {
+    display: block;
+    float: left;
+    width: auto;
+}
+
+.v2-Grid--fitToFill > .Grid-cell--2 {
+    display: block;
+    overflow: hidden;
+    width: auto;
+}
+
+/* Contain floats */
+
+.v2-Grid--fitToFill:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+

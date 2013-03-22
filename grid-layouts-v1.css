@@ -1,0 +1,34 @@
+/* ==========================================================================
+   SUIT grid layouts
+   ========================================================================== */
+
+/**
+ * Modifiers for the core 'suit-grid' component. These traits are pre-build
+ * grids that provide different layouts at different breakpoints (supports 2
+ * breakpoints).
+ *
+ * Example uses:
+ *
+ * <div class="Grid v2-Grid--2col v3-Grid--4col">
+ *     <div class="Grid-cell Grid-cell--1"></div>
+ *     <div class="Grid-cell Grid-cell--2"></div>
+ *     <div class="Grid-cell Grid-cell--3"></div>
+ *     <div class="Grid-cell Grid-cell--4"></div>
+ * </div>
+ *
+ * <div class="Grid v2-Grid--fitToFill">
+ *     <div class="Grid-cell Grid-cell--1"></div>
+ *     <div class="Grid-cell Grid-cell--2"></div>
+ * </div>
+ */
+
+/* Grid version 1 (default)
+   ========================================================================== */
+
+.v1-Grid--2col > .Grid-cell {
+    width: 50%;
+}
+
+.v1-Grid--3col > .Grid-cell {
+    width: 33.333%;
+}

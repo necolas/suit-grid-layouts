@@ -71,14 +71,17 @@ Layouts are inherited by wider viewports.
 ### Referencing the components
 
 During development, you can include the grid components in your CSS using the
-`@import` directive in your main stylesheet. Your build step should take care
-of inlining these imports for production.
+`@import` directive in your main stylesheet. Include your custom Media Query
+breakpoints here too. Your build step should take care of inlining these
+imports for IE 8 testing and production.
 
 Example:
 
 ```css
 @import "/components/suit-grid/grid.css";
-@import "/components/suit-grid-layouts/grid-layouts.css";
+@import "/components/suit-grid-layouts/grid-layouts-v1.css";
+@import "/components/suit-grid-layouts/grid-layouts-v2.css" (min-width: 25em);
+@import "/components/suit-grid-layouts/grid-layouts-v3.css" (min-width: 50em);
 ```
 
 ### Templating
@@ -247,7 +250,7 @@ When submitting patches, you should include a corresponding test in the HTML
 files and check that you have not introduced any regressions.
 
 Please read these [contribution
-guidelines](https://github.com/necolas/issue-guidelines).
+guidelines](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md).
 
 ## Browser support
 

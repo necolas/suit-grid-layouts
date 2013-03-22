@@ -1,0 +1,35 @@
+/* Grid version 3 (at second breakpoint)
+========================================================================== */
+
+.v3-Grid--1col > .Grid-cell {
+    width: 100%;
+}
+
+.v3-Grid--1to2 > .Grid-cell--2,
+.v3-Grid--2to1 > .Grid-cell--1 {
+    width: 66.666%;
+}
+
+.v3-Grid--2to3 > .Grid-cell--2,
+.v3-Grid--3to2 > .Grid-cell--1 {
+    width: 60%;
+}
+
+.v3-Grid--2col > .Grid-cell {
+    width: 50%;
+}
+
+.v3-Grid--2to3 > .Grid-cell--1,
+.v3-Grid--3to2 > .Grid-cell--2 {
+    width: 40%;
+}
+
+.v3-Grid--1to2 > .Grid-cell--1,
+.v3-Grid--2to1 > .Grid-cell--2,
+.v3-Grid--3col > .Grid-cell {
+    width: 33.333%;
+}
+
+.v3-Grid--4col > .Grid-cell {
+    width: 25%;
+}
