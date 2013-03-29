@@ -78,10 +78,10 @@ imports for IE 8 testing and production.
 Example:
 
 ```css
-@import "/components/suit-grid/grid.css";
-@import "/components/suit-grid-layouts/grid-layouts-v1.css";
-@import "/components/suit-grid-layouts/grid-layouts-v2.css" (min-width: 25em);
-@import "/components/suit-grid-layouts/grid-layouts-v3.css" (min-width: 50em);
+@import "/bower_components/suit-grid/grid.css";
+@import "/bower_components/suit-grid-layouts/grid-layouts-v1.css";
+@import "/bower_components/suit-grid-layouts/grid-layouts-v2.css" (min-width: 25em);
+@import "/bower_components/suit-grid-layouts/grid-layouts-v3.css" (min-width: 50em);
 ```
 
 ### Templating
