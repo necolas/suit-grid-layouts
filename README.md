@@ -10,7 +10,7 @@ Read more about [SUIT's design principles](https://github.com/necolas/suit/).
 
 ## Installation
 
-* [Bower](https://github.com/twitter/bower/): `bower install suit-grid-layouts --save`
+* [Bower](https://github.com/twitter/bower/): `bower install --save suit-grid-layouts`
 * Download: [zip](https://github.com/necolas/suit-grid-layouts/zipball/master)
 * Git: `git clone https://github.com/necolas/suit-grid-layouts`
 
