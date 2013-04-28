@@ -1,5 +1,7 @@
 === HEAD
 
+* Rename `component.json` to `bower.json`.
+
 === 0.2.0 (March 22, 2013)
 
 * Break the layouts for each breakpoint into separate files.
