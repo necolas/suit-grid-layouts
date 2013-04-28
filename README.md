@@ -10,7 +10,7 @@ Read more about [SUIT's design principles](https://github.com/necolas/suit/).
 
 ## Installation
 
-* [Bower](https://github.com/twitter/bower/): `bower install --save suit-grid-layouts`
+* [Bower](http://bower.io/): `bower install --save suit-grid-layouts`
 * Download: [zip](https://github.com/necolas/suit-grid-layouts/zipball/master)
 * Git: `git clone https://github.com/necolas/suit-grid-layouts`
 
@@ -30,7 +30,7 @@ this responsive extension includes:
 
 This grid extension is a collection of simple, prebuilt, self-contained fluid
 layouts. In contrast, flexible responsive grid systems like
-[griddle](https://github.com/necolas/griddle) use classes to directly control
+[griddle](https://github.com/necolas/griddle/) use classes to directly control
 the percentage width of _individual_ elements at multiple viewport widths.
 
 ## Layouts
@@ -228,12 +228,12 @@ queries](http://nicolasgallagher.com/mobile-first-css-sass-and-ie/)).
 ## Contributing to development
 
 Front-end development dependencies are managed with
-[Bower](https://github.com/twitter/bower/), a node package.
+[Bower](http://bower.io/), a node package.
 
 Install Bower:
 
 ```
-npm install bower -g
+npm install -g bower
 ```
 
 From within the `suit-grid-layouts` directory, run:
