@@ -57,7 +57,7 @@ Layouts are inherited by wider viewports.
 
 ### v3: wide-width viewports (>= 50em)
 
-* `v2-Grid--1col`: One column
+* `v3-Grid--1col`: One column
 * `v3-Grid--2col`: Split into 2 columns
 * `v3-Grid--3col`: Split into 3 columns
 * `v3-Grid--4col`: Split into 4 columns
@@ -177,8 +177,8 @@ functionality.
 Reusable layout template:
 
 ```html
-<!-- @name grid_doubles
-     @desc A stand-alone template for the 1col -> 2col -> 4col layout flow -->
+{{! Template name: responsive_grid_1to2to4 }}
+{{! The template for the 1col -> 2col -> 4col responsive layout }}
 
 <div class="Grid v2-Grid--2col v3-Grid--4col">
     <div class="Grid-cell Grid-cell--1">
@@ -199,10 +199,9 @@ Reusable layout template:
 Component-specific template that inherits a reusable layout template:
 
 ```html
-<!-- @name promos
-     @desc Layout for homepage promo boxes -->
+{{! Homepage promo box layout }}
 
-{{< grid_doubles}}
+{{< responsive_grid_1to2to4}}
     {{$content_cell_1}}
         {{> partials/promo_1}}
     {{/content_cell_1}}
@@ -215,7 +214,7 @@ Component-specific template that inherits a reusable layout template:
     {{$content_cell_4}}
         {{> partials/promo_4}}
     {{/content_cell_4}}
-{{/grid_doubles}}
+{{/responsive_grid_1to2to4}}
 ```
 
 ### IE 8 support
@@ -223,12 +222,12 @@ Component-specific template that inherits a reusable layout template:
 If you need to support a widescreen layout for IE 8 (without resorting to
 JavaScript), you may want to look into serving the grid CSS to IE 8
 [without using media
-queries](http://nicolasgallagher.com/mobile-first-css-sass-and-ie/)).
+queries](http://nicolasgallagher.com/mobile-first-css-sass-and-ie/).
 
 ## Contributing to development
 
-Front-end development dependencies are managed with
-[Bower](http://bower.io/), a node package.
+Front-end development dependencies are managed with [Bower](http://bower.io/),
+a node package.
 
 Install Bower:
 
