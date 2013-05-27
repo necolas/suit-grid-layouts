@@ -8,6 +8,8 @@ simple HTML/CSS building blocks.
 
 Read more about [SUIT's design principles](https://github.com/necolas/suit/).
 
+[A responsive demo](http://necolas.github.io/suit-grid-layouts)
+
 ## Installation
 
 * [Bower](http://bower.io/): `bower install --save suit-grid-layouts`
