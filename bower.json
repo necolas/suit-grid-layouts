@@ -2,7 +2,11 @@
     "name": "suit-grid-layouts",
     "version": "0.2.1",
     "author": "Nicolas Gallagher",
-    "main": "grid-layouts.css",
+    "main": [
+        "grid-layouts-v1.css",
+        "grid-layouts-v2.css",
+        "grid-layouts-v3.css"
+    ],
     "dependencies": {
         "suit-grid": "~0.3.0"
     },
