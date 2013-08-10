@@ -3,9 +3,9 @@
     "repo": "suitcss/grid-layouts",
     "version": "0.2.1",
     "styles": [
-        "grid-layout-v1.css",
-        "grid-layout-v2.css",
-        "grid-layout-v3.css"
+        "grid-layouts-v1.css",
+        "grid-layouts-v2.css",
+        "grid-layouts-v3.css"
     ],
     "dependencies": {
         "jaredhanson/suitcss-grid": "component"
