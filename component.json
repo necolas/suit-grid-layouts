@@ -1,0 +1,15 @@
+{
+    "name": "grid-layouts",
+    "repo": "suitcss/grid-layouts",
+    "version": "0.2.1",
+    "styles": [
+        "grid-layouts-v1.css",
+        "grid-layouts-v2.css",
+        "grid-layouts-v3.css"
+    ],
+    "dependencies": {
+        "suitcss/grid": "~0.3.0"
+    },
+    "author": "Nicolas Gallagher",
+    "license": "MIT"
+}
