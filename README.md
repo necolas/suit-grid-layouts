@@ -1,25 +1,25 @@
 # SUIT grid layouts (responsive)
 
-A SUIT component that extends [suit-grid](https://github.com/necolas/suit-grid/)
+A SUIT component that extends [suit-grid](https://github.com/suitcss/grid/)
 to provide responsive CSS layouts across 2 Media Query breakpoints.
 
 It aims to make it easier to build larger, intricate, adaptive layouts from
 simple HTML/CSS building blocks.
 
-Read more about [SUIT's design principles](https://github.com/necolas/suit/).
+Read more about [SUIT's design principles](https://github.com/suitcss/suit/).
 
-[A responsive demo](http://necolas.github.io/suit-grid-layouts)
+[A responsive demo](http://suitcss.github.io/grid-layouts/)
 
 ## Installation
 
 * [Bower](http://bower.io/): `bower install --save suit-grid-layouts`
-* Download: [zip](https://github.com/necolas/suit-grid-layouts/zipball/master)
+* Download: [zip](https://github.com/suitcss/grid-layouts/zipball/master)
 * Git: `git clone https://github.com/necolas/suit-grid-layouts`
 
 ## Features
 
 This component takes a slightly different approach to CSS grids. In addition to
-the features inherited from [suit-grid](https://github.com/necolas/suit-grid/),
+the features inherited from [suit-grid](https://github.com/suitcss/grid/),
 this responsive extension includes:
 
 * Narrow/mobile-first.
@@ -244,7 +244,7 @@ bower install
 ```
 
 This will install [normalize.css](https://github.com/necolas/normalize.css/)
-and [suit-grid](https://github.com/necolas/suit-grid/) in the `components`
+and [suit-grid](https://github.com/suitcss/grid/) in the `components`
 directory. These components are used by the HTML test files found in `test`.
 
 When submitting patches, you should include a corresponding test in the HTML
