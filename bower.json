@@ -8,14 +8,15 @@
         "grid-layouts-v3.css"
     ],
     "dependencies": {
-        "suit-grid": "~0.3.0"
+        "suit-grid": ">=0.3.0"
     },
     "devDependencies": {
         "normalize-css": "~2.1.0",
-        "suit-utils-dimension": "~0.2.0"
+        "suit-utils-dimension": "~0.5.0"
     },
     "ignore": [
         "CHANGELOG.md",
+        "component.json",
         "test.html"
     ]
 }
