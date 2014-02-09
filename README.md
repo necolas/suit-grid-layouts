@@ -1,5 +1,7 @@
 # SUIT grid layouts (responsive)
 
+**NO LONGER MAINTAINED**
+
 A SUIT component that extends [suit-grid](https://github.com/suitcss/grid/)
 to provide responsive CSS layouts across 2 Media Query breakpoints.
 
@@ -8,12 +10,12 @@ simple HTML/CSS building blocks.
 
 Read more about [SUIT's design principles](https://github.com/suitcss/suit/).
 
-[A responsive demo](http://suitcss.github.io/grid-layouts/)
+[A responsive demo](http://necolas.github.io/suit-grid-layouts/)
 
 ## Installation
 
 * [Bower](http://bower.io/): `bower install --save suit-grid-layouts`
-* Download: [zip](https://github.com/suitcss/grid-layouts/zipball/master)
+* Download: [zip](https://github.com/necolas/suit-grid-layouts/zipball/master)
 * Git: `git clone https://github.com/necolas/suit-grid-layouts`
 
 ## Features
