@@ -1,6 +1,6 @@
 # SUIT grid layouts (responsive)
 
-**NO LONGER MAINTAINED**
+![unmaintained](http://img.shields.io/badge/status-unmaintained-red.png)
 
 A SUIT component that extends [suit-grid](https://github.com/suitcss/grid/)
 to provide responsive CSS layouts across 2 Media Query breakpoints.
